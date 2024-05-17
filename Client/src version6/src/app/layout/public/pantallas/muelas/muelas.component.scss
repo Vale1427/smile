@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  header {
+    background: linear-gradient(70deg, rgb(44, 216, 159), rgba(28, 154, 158, 0.685));
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .container h4 {
+    font-family: "Arial", sans-serif; /* Cambia "Arial" por el tipo de fuente que desees utilizar */
+    font-size: 25px; /* Tamaño de fuente (opcional) */
+    font-weight: normal; /* Peso de la fuente (normal, bold, etc.) (opcional) */
+    line-height: 1.8; /* Altura de línea (opcional) */
+    color: #333; /* Color de texto (opcional) */
+    text-align: justify;
+  }
+  .imgextrac{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    
+  }
+  h1 {
+    margin-top: 0;
+    
+  }
+  p {
+    line-height: 1.6;
+  }
+  .features {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .feature {
+    flex: 1;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  .feature h2 {
+    margin-top: 0;
+    color: #32927df1;
+  }
+  .list {
+    list-style: none;
+    font-family: "Arial", sans-serif; /* Cambia "Arial" por el tipo de fuente que desees utilizar */
+    font-size: 25px; /* Tamaño de fuente (opcional) */
+    font-weight: normal; /* Peso de la fuente (normal, bold, etc.) (opcional) */
+    line-height: 1.8; /* Altura de línea (opcional) */
+    color: #333; /* Color de texto (opcional) */
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto; /* Margen automático a izquierda y derecha para centrar */
+    max-width: 600px;
+    text-align: justify;
+  }
+  .list-item {
+    margin-bottom: 10px;
+  }
+  .list-item i {
+    margin-right: 10px;
+  }
+  

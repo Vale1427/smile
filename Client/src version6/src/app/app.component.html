@@ -1,0 +1,23 @@
+<div *ngIf="true">
+    <app-horarionav></app-horarionav>
+
+    <div class="contenedorBar">
+        <app-sidenavbar  class="sidenavbar" *ngIf="true"></app-sidenavbar>
+        <div class="contenido">
+            <app-upnavbar class="upnavbar"></app-upnavbar>
+            <br>
+            <div class="cuerpoPrimario">
+                <app-body ></app-body>
+            </div>
+            <footer>
+                <app-footer></app-footer>
+            </footer>    
+        </div>
+    </div>
+    
+
+</div>
+
+<div  *ngIf="false">
+    <app-error></app-error>
+</div>

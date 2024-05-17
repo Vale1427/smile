@@ -1,0 +1,110 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.btngenrec{
+    text-align: right;
+}
+h1 {
+    text-align: center;
+}
+form {
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+input[type="submit"] {
+    background-color: #1342c4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+input[type="submit"]:hover {
+    background-color: #131858;
+}
+input[type="submit1"] {
+    background-color: #19c413;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+input[type="submit1"]:hover {
+    background-color: #218f17;
+}
+.cita-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.filtro {
+    margin-bottom: 20px;
+}
+.calendar {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.month {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-collapse: collapse;
+}
+.day {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.available {
+    background-color: #4caf50;
+    color: #fff;
+}
+.unavailable {
+    background-color: #f44336;
+    color: #fff;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  .btnmost{
+    text-align: center;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }

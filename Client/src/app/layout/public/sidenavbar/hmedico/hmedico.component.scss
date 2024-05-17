@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 20;
+}
+
+    
+form {
+    
+    background-image: url('../../../../../assets/imgValeria/img/fondo2.jpg');
+   
+    padding: 20px;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(236, 16, 16, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+h2 {
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+    opacity: 0.9;
+    
+}
+label {
+    font-weight: bold;
+}
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

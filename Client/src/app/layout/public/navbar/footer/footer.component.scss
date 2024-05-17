@@ -1,0 +1,79 @@
+.redes{
+    font-size: .5px;
+}
+.btn {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 2px;
+    bottom: 2px;
+    z-index: 10;
+}
+.aviso{
+    text-align: center;
+}
+
+#scrollBtn {
+  display: none; /* Oculta el botón por defecto */
+  position: fixed; /* Fija el botón en la ventana del navegador */
+  bottom: 20px; /* Posiciona el botón 20px desde la parte inferior */
+  right: 20px; /* Posiciona el botón 20px desde la derecha */
+  z-index: 99; /* Asegura que el botón esté por encima de otros elementos */
+  font-size: 24px; /* Tamaño de la fuente del botón */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el botón */
+}
+
+#scrollBtn:hover {
+  background-color: #0056b3; /* Cambia el color de fondo del botón al pasar el ratón sobre él */
+}
+.back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-to-top-btn:hover {
+    background-color: #0056b3;
+  }
+  d-flex{
+    align-items: center;
+  }

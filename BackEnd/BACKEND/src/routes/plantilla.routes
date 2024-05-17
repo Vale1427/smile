@@ -1,0 +1,17 @@
+import {Router} from 'express';
+
+const router = Router();
+
+//#region GET
+//#endregion
+
+//#region POST
+//#endregion
+
+//#region PUT
+//#endregion
+
+//#region DELETE
+//#endregion
+
+export default router;

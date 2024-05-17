@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas</title>
+   
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Citas</h1>
+        <form id="cita-form">
+            <input type="text" id="nombre" placeholder="Nombre">
+            <select id="tipo-cita">
+                <option value="Servicio">Servicio</option>
+                <option value="Servicio1">Colocacion de brakets</option>
+                <option value="Servicio2">Limpiezas Dentales</option>
+                <option value="Servicio3">Extraccion dental</option>
+                <option value="Servicio4">Extracciones de muelas de Juicio </option>
+                <option value="Servicio5">Revisión General infantil </option>
+                <option value="Servicio6">Servicio de emergencia </option>
+            </select>
+            <input type="text" id="correo" placeholder="Correo Electronico">
+            <h3>Horario Disponible</h3>
+            <div class="calendar">
+                <div class="month">Abril 2024</div>
+                <div class="days">
+                    <div class="day">Dom</div>
+                    <div class="day">Lun</div>
+                    <div class="day">Mar</div>
+                    <div class="day">Mié</div>
+                    <div class="day">Jue</div>
+                    <div class="day">Vie</div>
+                    <div class="day">Sáb</div>
+                    <div class="day unavailable">-</div>
+                    <div class="day ">-</div>
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day unavailable">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day unavailable">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day unavailable">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day unavailable">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day unavailable">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day unavailable">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                </div>
+            </div>
+
+            <input type="date" id="fecha">
+            <select id="horario">
+                <option value="horario">Horario</option>
+                <option value="08:00">08:00 am</option>
+                <option value="08:45">08:45 am</option>
+                <option value="9:30">9:30 am</option>
+                <option value="10:15">10:15 am</option>
+                <option value="11:00">11:00 am</option>
+                <option value="11:45">11:45 am</option>
+                <option value="12:30">12:30 pm</option>
+                <option value="01:15">01:15 pm</option>
+                <option value="02:00">02:00 pm</option>
+                <option value="04:00">04:00 pm</option>
+                <option value="04:45">04:45 pm</option>
+                <option value="05:30">05:30 pm</option>
+                <option value="Emergencia">Servicio de emergencia </option>
+            </select>
+            <div class="btncacita">
+                <input type="submit" value="Agregar Cita">
+            </div>
+            
+        </form>
+
+       
+        
+        <div id="citas-container"></div>
+    </div>
+    <div class="container">
+        <h2>Listado de Citas</h2>
+        <form id="dateForm">
+          <label for="fecha">Selecciona una fecha:</label>
+          <input type="date" id="fecha" name="fecha">
+          <input type="submit" value="Mostrar Citas">
+        </form>
+      
+        <div id="citasList"></div>
+      </div>
+      
+</body>
+</html>

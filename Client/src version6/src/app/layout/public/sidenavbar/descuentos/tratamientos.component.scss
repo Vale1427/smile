@@ -1,0 +1,11 @@
+//@import url("../../../../../assets/PersonalSCSS/bootstrap.min.scss");
+@import url("../../../../../assets/PersonalSCSS/style.scss");
+
+
+.bg-primary {
+    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, 0.466)),url('../../../../../assets/imgValeria/img/price-2.jpg') center center no-repeat;
+    background-size: cover;
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+    
+}

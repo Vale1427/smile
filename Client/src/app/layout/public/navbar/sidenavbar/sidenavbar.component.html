@@ -1,0 +1,35 @@
+<div class="navLado" [ngClass]="collapsed ? 'ladonav-collapsed': ''">
+    <div class="logo-contenedor">
+        <button class="logoP" (click)="toggleCollapse()" >
+            <div [@rotateIcon]="collapsed ? 'collapsed' : 'expanded'">
+                <i class="fa-solid fa-bars" ></i>
+            </div>
+            
+        </button>
+        <div class="logo-texto" *ngIf="collapsed" @fadeInOut>
+            Happy&nbsp;Smile
+        <br>
+        </div>
+        <button class="boton-cerrar" @rotateX @fadeInOut *ngIf="collapsed" (click)="closeSideNav()">
+            <i class="fa-solid fa-x"></i>
+        </button>
+    </div>
+
+    <ul class="navlado-nav">
+        <li class="navlado-objeto" *ngFor="let data of navData">
+            <a class="ladonav-link-texto" [routerLink]="data.routeLink"
+                routerLinkActive="inactivo"
+                [routerLinkActiveOptions]="{exact: true}"
+            >
+                <i class="ladonav-link-icono" [class]="data.icon"></i>
+                <span class="ladonav-link-texto" @fadeInOut *ngIf="collapsed">{{data.label}}</span>
+            </a>
+        </li>
+        
+        
+
+
+
+    </ul>
+
+</div>

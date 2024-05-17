@@ -1,0 +1,308 @@
+.sideLogo {
+    background-image: url("../../../../../assets/imgValeria/img/registro.gif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  /*.bg-white{
+    background-image:url("../../../../../assets/fondo.jpg");
+    filter: brightness(0.75);
+    filter: opacity(50%);
+  }*/
+  
+  .form{
+    height: 350px; /* Altura fija deseada */
+    overflow: auto; /* Añade una barra de desplazamiento si el contenido excede la altura */
+  }
+  
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(100%);
+    }
+    25% {
+      transform: translateY(-15%);
+    }
+    50% {
+      transform: translateY(10%);
+    }
+    75% {
+      transform: translateY(-5%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .messageFail{
+  
+      background-color: #f8d7da;
+      color: #721c24;
+      padding: 10px;
+      border: 1px solid #f5c6cb;
+      border-radius: 4px;
+      animation: bounce 1s ease-in-out
+  }
+  
+  .messageSuccess{
+    background-color: #d7f8d9;
+    color: #1c722f;
+    padding: 10px;
+    border: 1px solid #c6f5c8;
+    border-radius: 4px;
+    animation: bounce 1s ease-in-out
+  }
+  
+  
+  .upLogo {
+    max-width: 100%;
+    height: auto;
+    width: 80px;
+  }
+  
+  @property --gradient-start {
+    syntax: "<color>";
+    initial-value: transparent;
+    inherits: false;
+  }
+  
+  @property --gradient-middle {
+    syntax: "<color>";
+    initial-value: transparent;
+    inherits: false;
+  }
+  
+  @property --gradient-end {
+    syntax: "<color>";
+    initial-value: transparent;
+    inherits: false;
+  }
+  
+  .btn-color-local {
+    --gradient-start: #3498db;
+    --gradient-middle:rgb(252, 90, 252);
+    --gradient-end: #3498db;
+    transition: 0.1s --gradient-start,0.3s --gradient-middle , 0.1s --gradient-end;
+    background: linear-gradient(90deg,
+        var(--gradient-start),
+        var(--gradient-middle),
+        var(--gradient-end));
+    color: white;
+  }
+  
+  .btn-color-local:hover {
+    --gradient-start:  rgb(250, 69, 250);
+    --gradient-middle: #3498db;
+    --gradient-end: rgb(250, 69, 250);
+    color: whitesmoke;
+    transition: 0.1s --gradient-start,0.3s --gradient-middle , 0.1s --gradient-end;
+    background: linear-gradient(90deg,
+        var(--gradient-start),
+        var(--gradient-middle),
+        var(--gradient-end));
+  }
+  
+  .btn-color-local:active{
+    --gradient-start: rgb(0, 255, 55);
+    --gradient-middle: rgb(0, 255, 55);
+    --gradient-end: rgb(0, 255, 55);
+    transition: 0.1s --gradient-start,0.3s --gradient-middle , 0.1s --gradient-end;
+    background: linear-gradient(90deg,
+        var(--gradient-start),
+        var(--gradient-middle),
+        var(--gradient-end));
+  }
+  
+  
+  .checkbox-wrapper {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 12px;
+    user-select: none;
+  }
+  
+  .checkbox-wrapper input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: relative;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-wrapper input:checked ~ .checkmark {
+    background-color: #a8d17a;
+    border-color: #a8d17a;
+  }
+  
+  .checkbox-wrapper input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkmark:after {
+    content: "\2713"; /* Unicode character for checkmark */
+    color: #fff;
+    font-size: 12px;
+    left: 4px;
+    top: 1px;
+  }
+  
+  
+  
+  .bg_animate{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #005C98, #505BDA);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+  /* burbujas */
+  
+  .burbuja {
+    // overflow-y: hidden;
+    border-radius: 50%;
+    opacity: .3;
+    position: absolute;
+    bottom: 0;
+    animation: burbujas 3s linear infinite;
+    --gradient-start: #86cfff;
+    --gradient-middle:rgb(46, 116, 247);
+    --gradient-end: #1b2afc;
+    
+    transition: 0.1s --gradient-start, 0.3s --gradient-middle, 0.1s --gradient-end;
+    background: linear-gradient(var(--random-angle),
+      var(--gradient-start),
+      var(--gradient-middle)),
+      var(--gradient-end)
+  }
+  
+  
+  .burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+  }
+  
+  .burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+  }
+  
+  .burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+  }
+  
+  .burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+  }
+  
+  .burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+  }
+  
+  .burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+  }
+  
+  .burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+  }
+  
+  .burbuja:nth-child(8){
+    width: 100;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+  }
+  
+  .burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+  }
+  
+  .burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+  }
+  
+  
+  @keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+  }
+  
+  @keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+  }
+  

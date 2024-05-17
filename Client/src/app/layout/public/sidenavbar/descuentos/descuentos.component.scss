@@ -1,0 +1,58 @@
+@import url("../../../../../assets/PersonalSCSS/bootstrap.min.scss");
+@import url("../../../../../assets/PersonalSCSS/style.scss");
+
+.bg-offer1 {
+    background: url('../../../../../assets/imgValeria/img/servicio4.jpg') center center no-repeat;
+    background-size: cover;
+}
+.bg-offer2 {
+    background: url('../../../../../assets/imgValeria/img/caries.jpg') center center no-repeat;
+    background-size: cover;
+}
+.bg-offer3 {
+    background: url('../../../../../assets/imgValeria/img/servicio5.jpg') center center no-repeat;
+    background-size: cover;
+}
+.bg-offer4 {
+    background: url('../../../../../assets/imgValeria/img/servicio1.jpg') center center no-repeat;
+    background-size: cover;
+}
+.container{ 
+    font-size: 18px;
+    height: 100%;
+    
+}
+.migas{
+    color: #fff;
+}
+
+.bg-primary {
+    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)),url('../../../../../assets/imgValeria/img/descuento.jpg') center center no-repeat;
+    background-size: cover;
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.text-break{
+    text-align: justify;
+}
+.imgdoc{
+    text-align:center;
+    height: 76%;
+    width:100%;
+    
+}
+.meta  {
+   
+    background: linear-gradient(to top, rgba(65, 143, 231, 0.795), 20%, cyan);
+}
+.ofertas{
+    text-align:center;
+   
+    font-size: 50px;
+    font-weight: 900;
+    color: #e02a2a;
+    font-family: "fantasy";
+   
+    font-style: normal;
+}

@@ -1,0 +1,120 @@
+@import url("../../../../../assets/PersonalSCSS/bootstrap.min.scss");
+@import url("../../../../../assets/PersonalSCSS/style.scss");
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #f5f5f5;
+}
+.center {
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+.formtithorario{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.migas{
+    color: #fff;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #7aa9d68e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.horario-form{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #8de8ffbd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+p {
+    color: #666;
+}
+.contact-info {
+    margin-top: 30px;
+}
+.contact-info p {
+    margin-bottom: 10px;
+    color: #666;
+}
+.contact-form {
+    margin-top: 30px;
+    text-align: center;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact-form textarea {
+    height: 150px;
+}
+.contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.bg-primary {
+    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, 0.466)),url('../../../../../assets/imgValeria/img/contact.jpg') center center no-repeat;
+    background-size: cover;
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+}
+.breadcrumbs {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.breadcrumb-item {
+    display: inline-block;
+    margin-right: 5px;
+}
+.breadcrumb-item:not(:last-child):after {
+    content: "›";
+    margin-left: 5px;
+    color: #666;
+}
+.breadcrumb-item:last-child {
+    font-weight: bold;
+    color: #333;
+}

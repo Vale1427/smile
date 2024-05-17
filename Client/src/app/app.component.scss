@@ -1,0 +1,34 @@
+.contenedorBar {
+  display: flex;
+
+  
+  .contenido {
+    /* Estilos específicos para la upnavbar */
+    flex-grow: 1; /* Para que ocupe todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-between;
+
+    .upnavbar{
+      top:0;
+      position: sticky;
+      z-index: 1;
+    }
+    
+    .cuerpoPrimario{
+      margin-top: -2.7rem;
+    }
+  
+
+
+    
+
+    footer{
+      margin-top: 5%;
+      bottom: 0;
+    }
+
+    
+  }
+  }

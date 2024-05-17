@@ -1,0 +1,58 @@
+<div class="container w-75 mb-2 mt-3 rounded shadow">
+    <div class="burbujas">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+    </div>
+
+    <div class="row">
+        <div class="col sideLogo d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded"></div>
+        <div class="col bg-white m-1 p-2 mh-100 rounded">
+            <div class="text-center">
+                <img src="../../../../../assets/logo-dental.png" class="upLogo" alt="happy_smile_logo" srcset />
+                <h2 class="fw-bold text-center py-1">
+                    Inicia Sesion
+                </h2>
+            </div>
+
+            <!-- Formulario del login -->
+            <form class="mt-3 p-1 pt-2 position-relative">
+                <div class="container-fluid">
+                    <div class="mb-1">
+                        <label for="email" class="form-label">Correo electronico o usuario</label>
+                        <input type="email" class="form-control" id="email" name="identificador"
+                            placeholder="Ingresa correo electronico o usuario" required="required" />
+                    </div>
+
+                    <div class="mb-1">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" placeholder="Ingresa contraseña"
+                            required="required" name="password"/>
+                    </div>
+                    
+                    
+                    <div>
+                        <label class="checkbox-wrapper" for="keepSession">
+                            <input type="checkbox" name="keepSession" id="keepSession" />
+                            <span class="checkmark"></span>
+                            Mantener inicio de sesión
+                        </label>
+                    </div>
+                    <div class="mb-1position-absolute bottom-0 start-0 end-0">
+                        <button type="submit"
+                            class="btn btn-color-local btn-lg btn-block w-100">
+                            Iniciar sesión
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

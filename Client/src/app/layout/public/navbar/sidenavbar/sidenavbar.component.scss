@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.navLado{
+    background-color: rgb(114, 192, 201);
+    transition:all  0.4s ease;
+    position: sticky;
+    z-index: 0;
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+   // box-shadow: 0.063rem 0 1.25rem 0 rgb(170, 170, 170);
+
+    .logo-contenedor{
+    
+        display: flex;
+        align-items: center;
+        padding: 0.938rem 0.938rem 0 0.938rem;
+        width: 100%;
+        transition: all 0.3s;
+
+        .logoP{
+            background-color: #3498db;
+            text-align: center;
+            color: whitesmoke;
+            width: 3rem;
+            height: 3rem;
+            min-width: 3rem;
+            border-radius: 0.313rem;
+            padding: 0.313rem;
+            font-size: 24px;
+            font-weight: 900;
+            cursor: pointer;
+            border: none;
+        }
+
+        .logo-texto{
+            margin-left: 1.5rem;
+            font-size: 24px;
+            font-weight: 700;
+            color: #333333;
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .boton-cerrar{
+            margin-left: auto;
+            cursor: pointer;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: transparent;
+            border: none;
+
+            .fa-x{
+                color: #333333;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.ladonav-collapsed{
+    width: 16.5rem;
+}
+
+.navlado-nav{
+    list-style: none;
+    padding: 0.938rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 3.65rem);
+    cursor: pointer;
+
+    .navlado-objeto{
+        width: 100%;
+        margin-bottom: 0.625rem;
+        border-radius: 0.625rem;
+        color: #1e88e5;
+        transition: all 0.3s cubic-bezier(0.55, 0.09, 0.57, 0.81);
+        .ladonav-link-texto{
+            display: flex;
+            align-items: center;
+            height: 3rem;
+            text-decoration: none;
+            
+
+            .ladonav-link-icono{
+                font-size: 22px;
+                width: 2rem;
+                min-width: 2rem;
+                margin: 0 0.8rem;
+                text-align: center;
+            }
+
+            .ladonav-link-texto{
+                margin-left: 1.5rem;
+
+            }
+        }
+    }
+
+  .navlado-objeto:hover{
+    background-color: #1e88e5;
+        
+    .ladonav-link-texto{
+        color: white;
+        //transition: all 0.3s ease-out;
+    }
+  }  
+}
+
+.activo{
+    border-radius: 0.625rem;
+    background-color: #1e88e5;
+
+    .ladonav-link-icono, 
+    .ladonav-link-texto{
+        color: white;
+    }
+
+}

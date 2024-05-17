@@ -1,0 +1,45 @@
+.redes{
+    font-size: .5px;
+}
+.btn {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 2px;
+    bottom: 2px;
+    z-index: 10;
+}
+.aviso{
+    text-align: center;
+}
+    
